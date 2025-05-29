@@ -7,9 +7,6 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-	  <PublishSingleFile>true</PublishSingleFile>
-	  <SelfContained>true</SelfContained>
-	  <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <ApplicationIcon>Fis-1.ico</ApplicationIcon>
     <ErrorReport>none</ErrorReport>
   </PropertyGroup>

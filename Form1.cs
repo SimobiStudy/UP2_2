@@ -44,5 +44,17 @@ namespace TASK_4
             Registry.CurrentUser.OpenSubKey(@"Software\Test", true)
                 .SetValue("FormText", textBox1.Text);
         }
+
+        private void button1_click(object sender, EventArgs e)
+        {
+            if (Registry.CurrentUser.OpenSubKey("Software")
+                    .GetSubKeyNames().Contains("Text"))
+            {
+                Registry.CurrentUser.OpenSubKey(@"Software\Test", true)
+                    .DeleteValue("FormText");
+            }
+
+            textBox1.Text = "";
+        }
     }
 }
